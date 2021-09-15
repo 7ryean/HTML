@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+ol {
+  border-right: 1px gray solid;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol {
+  padding-left: 33px;
+}
+#article {
+  padding-left: 20px;
+}
+
+/* 크기가 작아지면 선도 없애고 본문 위치도 변경하고 제목도 줄이고 */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 35px;
+    border-bottom: none;
+  }
+  ol {
+    border-right: none;
+  }
+  #grid {
+    display: block;
+  }
+}
